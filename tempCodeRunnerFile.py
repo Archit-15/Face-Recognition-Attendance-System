@@ -1,0 +1,1 @@
+s function compares the encoding of the unkown photo with the list that contains the encodings of the

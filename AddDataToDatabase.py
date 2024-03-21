@@ -5,12 +5,7 @@ import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
 
-#Loading the service acccount key from file to gain access to real time database
-cred = credentials.Certificate("serviceAccountKey.json")
-#Initializing the SDK with loaded service key and the databse url which we have to give in json format(initializing a connection with firebase)
-firebase_admin.initialize_app(cred,{
-    'databaseURL' : "https://faceattendancerealtime-7e7ea-default-rtdb.firebaseio.com/"
-})  
+#Code for getting access to real time databse removed
 
 ref = db.reference('Students')  #This will create a reference to Students directory to read from and write to.It 
 #will create the directory if it doesn't already exist.

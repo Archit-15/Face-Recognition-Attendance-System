@@ -11,13 +11,8 @@ from firebase_admin import db
 from firebase_admin import storage
 from datetime import datetime
 
-#Loading the service acccount key from file to gain access to real time database
-cred = credentials.Certificate("serviceAccountKey.json")
-#Initializing the SDK wiht loaded service key and the databse url which we have to give in json format
-firebase_admin.initialize_app(cred,{
-    'databaseURL' : "https://faceattendancerealtime-7e7ea-default-rtdb.firebaseio.com/",
-    'storageBucket' : 'faceattendancerealtime-7e7ea.appspot.com'
-})  
+#Code for getting access to real time dabase removed
+
 
 bucket = storage.bucket()   #creates a refrence to firebase storage
 

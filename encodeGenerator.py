@@ -8,15 +8,6 @@ from firebase_admin import credentials
 from firebase_admin import db
 from firebase_admin import storage
 
-#Loading the service acccount key from file to gain access to real time database
-cred = credentials.Certificate("serviceAccountKey.json")
-#Initializing the SDK with loaded service key and the databse/storage url which we have to give in json format
-firebase_admin.initialize_app(cred,{
-    'databaseURL' : "https://faceattendancerealtime-7e7ea-default-rtdb.firebaseio.com/",
-    'storageBucket' : 'faceattendancerealtime-7e7ea.appspot.com'
-})  
-
-
 
 #Importing the student images 
 folderPath = 'Images'
